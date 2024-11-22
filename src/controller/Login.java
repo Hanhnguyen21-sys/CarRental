@@ -97,7 +97,9 @@ public class Login {
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
-        // new comment is right here
+        /**
+         * Some changes over here
+         */
         boolean login = false;
         for(User u: users)
         {
