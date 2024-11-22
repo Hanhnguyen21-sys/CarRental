@@ -10,6 +10,9 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+/**
+ * this is a new branch and will be merged to the old one
+ */
 public class Login {
     public static void main(String[] args) throws SQLException {
         Database database = new Database();
