@@ -10,12 +10,23 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+
+/**
+ * this is a new branch and will be merged to the old one
+ */
 public class Login {
     public static void main(String[] args) throws SQLException {
         Database database = new Database();
         Scanner s = new Scanner(System.in);
         new Login(database,s);
     }
+
+    /**
+     * Login is a main window that allows users enter information to log in their account
+     * @param database
+     * @param s
+     * @throws SQLException
+     */
     public Login(Database database, Scanner s) throws SQLException {
         String email = "";
         String password="";
@@ -86,6 +97,9 @@ public class Login {
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
+        /**
+         * Some changes over here
+         */
         boolean login = false;
         for(User u: users)
         {
