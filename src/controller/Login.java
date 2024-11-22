@@ -19,6 +19,13 @@ public class Login {
         Scanner s = new Scanner(System.in);
         new Login(database,s);
     }
+
+    /**
+     * Login is a main window that allows users enter information to log in their account
+     * @param database
+     * @param s
+     * @throws SQLException
+     */
     public Login(Database database, Scanner s) throws SQLException {
         String email = "";
         String password="";
